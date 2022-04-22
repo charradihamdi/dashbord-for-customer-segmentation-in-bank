@@ -10,7 +10,7 @@ const clusters =()=>{
     <div className="main"> 
     <div className="trending-container">
       <h1>cluster1</h1>
-       <p>more to 35 milloins users</p>
+       <p>over 41 million users,Customers aged between 20-60 ,Get more transaction value </p>
     </div>
     <div className="trending-container">
       <h1>cluster2</h1>
