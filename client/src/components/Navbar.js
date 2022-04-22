@@ -14,8 +14,8 @@ const Navbar = () => {
         <div className="logo">
           <NavLink exact to="/">
             <div className="logo">
-              <img src="./img/icon.png" alt="icon" />
-              <h3>Raccoont</h3>
+              {/* <img src="./img/_logo.png" alt="icon" /> */}
+              <h3>Keyrus</h3>
             </div>
           </NavLink>
         </div>
@@ -26,6 +26,9 @@ const Navbar = () => {
               <NavLink exact to="/profil">
                 <h5>Bienvenue {userData.pseudo}</h5>
               </NavLink>
+            </li>
+            <li className="welcome">
+           
             </li>
             <Logout />
           </ul>

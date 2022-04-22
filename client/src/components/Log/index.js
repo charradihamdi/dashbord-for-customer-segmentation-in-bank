@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import SignInForm from "./SignInForm";
 import SignUpForm from "./SignUpForm";
-
+import Trends from "../Trends";
 const Log = ( props ) => {
   const [signUpModal, setSignUpModal] = useState(props.signup);
   const [signInModal, setSignInModal] = useState(props.signin);
@@ -17,6 +17,9 @@ const Log = ( props ) => {
   };
 
   return (
+
+    <div className="main" style={{border:'0px solid black'}}>
+    <Trends />
     <div className="connection-form">
       <div className="form-container">
         <ul>
@@ -38,6 +41,7 @@ const Log = ( props ) => {
         {signUpModal && <SignUpForm />}
         {signInModal && <SignInForm />}
       </div>
+    </div>
     </div>
   );
 };

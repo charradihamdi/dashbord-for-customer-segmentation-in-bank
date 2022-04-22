@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
-
+import Thread from "../Thread";
 const SignInForm = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -34,6 +34,7 @@ const SignInForm = () => {
   };
 
   return (
+    
     <form action="" onSubmit={handleLogin} id="sign-up-form">
       <label htmlFor="email">Email</label>
       <br />
@@ -58,7 +59,10 @@ const SignInForm = () => {
       <div className="password error"></div>
       <br />
       <input type="submit" value="Se connecter" />
+     
     </form>
+    
+   
   );
 };
 
