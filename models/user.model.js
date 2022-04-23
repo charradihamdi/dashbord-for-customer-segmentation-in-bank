@@ -25,8 +25,14 @@ const userSchema = new mongoose.Schema(
       required: true,
       max: 1024,
       minlength: 6
+    },
+    roles: {
+      type:String,
+      trim:true,
+      roles:['admin','user']
     }
   },
+
   {
     timestamps: true,
   }
