@@ -26,7 +26,7 @@ _________________________
     
 _____________________________
 
-![Alt text](./client/public/img/screen.png"Screenshot")
+![Alt text](./client/public/img/screen.png)
 
   
 💻 Made by Ch.Hamdi. Free to use 
