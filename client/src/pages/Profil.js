@@ -14,16 +14,13 @@ const clusters =()=>{
     </div>
     <div className="trending-container">
       <h1>cluster2</h1>
-       <p>more to 35 milloins users</p>
+       <p>......</p>
     </div>
     <div className="trending-container">
       <h1>cluster3</h1>
-       <p>more to 35 milloins users</p>
+       <p>....</p>
     </div>
-    <div className="trending-container">
-      <h1>cluster4</h1>
-       <p>more to 35 milloins users</p>
-    </div>
+    
     </div>
     
     )
