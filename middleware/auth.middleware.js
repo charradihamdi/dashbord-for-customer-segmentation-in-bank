@@ -37,3 +37,12 @@ module.exports.requireAuth = (req, res, next) => {
     console.log('No token');
   }
 };
+exports.adminMiddleware = (req, res, next) => {
+  if (req.body.role !== "admin") {
+   
+    if (req.body.role !== "super-admin") {
+      return res.status(400).json({ message: "Admin access denied" });
+    }
+  }
+  next();
+};

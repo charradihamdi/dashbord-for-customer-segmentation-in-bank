@@ -26,11 +26,12 @@ const userSchema = new mongoose.Schema(
       max: 1024,
       minlength: 6
     },
-    roles: {
-      type:String,
-      trim:true,
-      roles:['admin','user']
-    }
+    role: {
+      type: String,
+      enum: ["user", "admin", "super-admin"],
+      default: "user",
+    },
+    contactNumber: { type: String },
   },
 
   {

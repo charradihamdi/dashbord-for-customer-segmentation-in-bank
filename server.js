@@ -2,15 +2,17 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const cookieParser = require('cookie-parser');
 const userRoutes = require('./routes/user.routes');
+const adminRoutes = require('./routes/admin.routes/admin.routes')
 require('dotenv').config({path: './config/.env'});
 require('./config/db');
-const {checkUser, requireAuth} = require('./middleware/auth.middleware');
+const {checkUser, requireAuth,adminMiddleware} = require('./middleware/auth.middleware');
 const cors = require('cors');
 
 const app = express();
 
 const corsOptions = {
   origin: process.env.CLIENT_URL,
+  origin:process.env.ADMIN_URL,
   credentials: true,
   'allowedHeaders': ['sessionId', 'Content-Type'],
   'exposedHeaders': ['sessionId'],
@@ -31,7 +33,7 @@ app.get('/jwtid', requireAuth, (req, res) => {
 
 // routes
 app.use('/api/user', userRoutes);
-
+app.use('/api/admin',adminRoutes)
 
 // server
 app.listen(process.env.PORT, () => {
