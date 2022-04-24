@@ -7,21 +7,28 @@ const Profil = () => {
   const uid = useContext(UidContext);
 const clusters =()=>{
   return (
-    <div className="main"> 
-    <div className="trending-container">
-      <h1>cluster1</h1>
-       <p>over 41 million users,Customers aged between 20-60 ,Get more transaction value </p>
-    </div>
-    <div className="trending-container">
-      <h1>cluster2</h1>
-       <p>......</p>
-    </div>
-    <div className="trending-container">
-      <h1>cluster3</h1>
-       <p>....</p>
-    </div>
-    
-    </div>
+<form action=""  id="sign-up-form">
+      <label htmlFor="email">CustomerId</label>
+      <br />
+      <input
+        type="text"
+        name="CustomerId"
+        id="email"
+      />
+      <br />
+      <label htmlFor="password">Account Id</label>
+      <br />
+      <input
+        type="password"
+        name="password"
+        id="password"
+
+      />
+      <div className="password error"></div>
+      <br />
+      <input type="showResult" value="show result" />
+     
+    </form>
     
     )
 }
