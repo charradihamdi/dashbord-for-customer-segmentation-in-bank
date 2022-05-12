@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Redirect, Route, Switch } from 'react-router-d
 import Home from '../../pages/Home';
 import Profil from '../../pages/Profil';
 import Navbar from '../Navbar';
-
+import Machine from '../../pages/Machine';
 const index = () => {
   return (
     <Router>
@@ -11,6 +11,7 @@ const index = () => {
       <Switch>
         <Route path="/" exact component={Home} />
         <Route path="/profil" exact component={Profil} />
+        <Route path="/MchineLearning" exact component={Machine} />
         <Redirect to="/" />
       </Switch>
     </Router>

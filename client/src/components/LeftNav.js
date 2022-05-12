@@ -2,6 +2,7 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { UidContext } from '../components/AppContext';
 import { useContext } from 'react';
+
 const LeftNav = () => {
   const uid = useContext(UidContext);
   return (
@@ -17,6 +18,10 @@ const LeftNav = () => {
        
           <NavLink to='/profil' exact activeClassName="active-left-nav">
             <img src="./img/icons/user.svg" alt="home"/>
+          </NavLink>
+          <br/>
+          <NavLink to='/MchineLearning' exact activeClassName="active-left-nav">
+            <img src="./img/icons/rocket.svg" alt="machine learning"/>
           </NavLink>
         </div>
       </div>
