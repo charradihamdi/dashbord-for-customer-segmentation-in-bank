@@ -4,48 +4,22 @@ import { UidContext } from "../components/AppContext";
 import LeftNav from "../components/LeftNav";
 import Thread from '../components/Thread'
 import Trends from "../components/Trends";
+
 const Profil = () => {
   const uid = useContext(UidContext);
-const clusters =()=>{
-  return (
-    <div className="main"> 
-    <div className="trending-container">
-    <h4>cluster1</h4>
-    <h3 style={{color:"white"}}>this cluster  is focused on the capital and its suburbs it contain client with most transaction .</h3>
-  </div>
 
-  <div className="trending-container">
-    <h4>cluster2</h4>
-    <h3 style={{color:"white"}}>details....</h3>
-  </div>
-
-  <div className="trending-container">
-    <h4>cluster3</h4>
-    <h3 style={{color:"white"}}>this cluster  is focused on the east coast it contain client with the second  most transaction .</h3>
-  </div>
-
-  <div className="trending-container">
-    <h4>cluster4</h4>
-    <h3 style={{color:"white"}}>this cluster  is focused on the middle and north it contain the least amount of client and least amount of transactions  .</h3>
-  </div>
-  </div>
-    
-    )
-}
-  return (
   
+  return (
     <div className="home">
-    <LeftNav />
-    <div className="main">
-      <div className="home-header">
-      {uid ? <div>{clusters()}</div>: <Log signin={true} signup={false} />}
+      <LeftNav />
+      <div className="main">
+        <div className="home-header">
+        {uid ?  <iframe title="custemer analytics inBank" width="1170" height="719" src="https://app.powerbi.com/reportEmbed?reportId=6ec48886-37ce-4dec-88e4-ab25a3449357&autoAuth=true&ctid=dbd6664d-4eb9-46eb-99d8-5c43ba153c61&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly93YWJpLXdlc3QtZXVyb3BlLXJlZGlyZWN0LmFuYWx5c2lzLndpbmRvd3MubmV0LyJ9" frameborder="0" allowFullScreen="true"></iframe> : <Log signin={true} signup={false} />}
+        </div>
+        
       </div>
-      
+     
     </div>
-
-  </div>
- 
-  
   );
 };
 

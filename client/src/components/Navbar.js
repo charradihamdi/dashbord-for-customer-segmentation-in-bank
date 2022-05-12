@@ -7,7 +7,7 @@ import Logout from "./Log/Logout";
 const Navbar = () => {
   const uid = useContext(UidContext);
   const userData = useSelector((state) => state.userReducer);
-
+  console.log(userData)
   return (
     <nav>
       <div className="nav-container">
@@ -19,12 +19,13 @@ const Navbar = () => {
             </div>
           </NavLink>
         </div>
-        {uid ? (
+        {
+        uid ? (
           <ul>
             <li></li>
             <li className="welcome">
               <NavLink exact to="/profil">
-                <h5>Bienvenue {userData.pseudo}</h5>
+                <h5>Bienvenue {userData.pseudo} </h5>
               </NavLink>
             </li>
             <li className="welcome">
