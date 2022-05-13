@@ -8,7 +8,7 @@ const upload = multer();
 router.post("/register", authController.signUp);
 router.post("/login", authController.signIn);
 router.get("/logout", authController.logout);
-
+router.get("/:id", userController.userInfo);
 
 
 module.exports = router;

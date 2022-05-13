@@ -27,7 +27,7 @@ const Home = () => {
                 <div className="col">
                   <h3>Data Analysis</h3>
                   <p>
-                    • Size: 40MB<br></br>• Shape: 150K rows and 15 Columns{" "}
+                    • Size: 3MB<br></br>• Shape: 150K rows and 15 Columns{" "}
                     <br></br>• Platform: Azure MchineLearning STUDIO
                   </p>
                 </div>
@@ -38,7 +38,7 @@ const Home = () => {
                     <br></br>• Average perceptron
                   </p>
                 </div>
-                <div className="col">
+                <div className="col" style={{marginRight:'10px'}}>
                   <h3>Data Visualization</h3>
                   <p>
                     • Azure MchineLearning studio <br></br>
