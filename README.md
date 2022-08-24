@@ -58,7 +58,7 @@ _____________________________
 
 
   _____________________________
-![Alt text](./client/public/pfeScreen/7.png)
+![Alt text](./client/public/img/20.png)
 
   _____________________________
 💻 Made by Ch.Hamdi. Free to use 
