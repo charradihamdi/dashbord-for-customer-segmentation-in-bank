@@ -1,6 +1,9 @@
 # 🚀 Javascript full-stack 🚀
+# 🚀 data analytics 🚀
 ## MERN Stack
-### React / Express / MongoDB / Redux
+## BI  
+## Machine learning
+### React / Express / MongoDB / Redux / power BI / Azure ML 
 
 Start server : `npm start`
 
